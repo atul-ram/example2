@@ -1,0 +1,10 @@
+---
+#  - name: copy file to location
+#    script: scripts/file.sh  {{ input_host_id }} {{ input_group_id }} {{ location }}
+
+  - stat: path=/tmp/file
+    register: p
+  - debug: msg="Path exists and is a directory"
+    when: p.stat.isdir is defined and p.stat.isdir
+  - debug: msg="Path exists and is a file"
+    when: p.stat.isdir is defined and p.stat.isdir == false

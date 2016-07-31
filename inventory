@@ -1,0 +1,4 @@
+[source]
+10.0.0.144  ansibile_ssh_user=sshadmin ansibile_ssh_pass=pass123
+#[destination]
+#10.0.0.133  ansibile_ssh_user=sshadmin ansibile_ssh_pass=pass123

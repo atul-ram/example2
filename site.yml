@@ -1,0 +1,10 @@
+---
+- hosts:
+    - all
+  remote_user: sshadmin
+  gather_facts: false
+  become: true
+  become_user: root
+  roles:
+#    - useradd
+    - common

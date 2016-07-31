@@ -1,0 +1,19 @@
+---
+create_users:
+  - user: appadm
+    comment: 'appadm service account'
+    generate_keys: true
+    pass: $6$PASS$l6V1zuFDiHSBFJbc48EQzTaLOup8LBoR0yZGLk3FOPWxX30tUZjw8lcN7Uw5B8UB2BqtzdovSrJySDdWnxT/U1
+    state: present
+    sudo: true
+    system_account: false
+    preseed_user: false
+
+  - user: webadm
+    comment: 'webadm service account'
+    generate_keys: true
+    pass: $6$PASS$l6V1zuFDiHSBFJbc48EQzTaLOup8LBoR0yZGLk3FOPWxX30tUZjw8lcN7Uw5B8UB2BqtzdovSrJySDdWnxT/U1
+    state: present
+    sudo: true
+    system_account: false
+    preseed_user: false
